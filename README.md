@@ -1,3 +1,6 @@
+To address the issue of downloading files larger than 100 MB, you can add a section to your README.md file that provides guidance on how to handle large files, particularly those managed with Git LFS (Large File Storage). Here's an updated version of your README.md file with this information:
+
+```markdown
 # Tuberculosis Detection AI Project
 
 ## Overview
@@ -20,6 +23,45 @@ This project aims to develop an AI-based system for the detection of Tuberculosi
 - Jenkins for CI/CD automation
 - Prometheus and Grafana for monitoring
 
+## Handling Large Files
+
+This project uses Git LFS (Large File Storage) for managing large files, such as AI model weights, that may exceed 100 MB in size. To work with large files in this repository, please follow these steps:
+
+### Prerequisites
+
+- Git LFS (Install from https://git-lfs.github.com/)
+
+### Cloning the Repository
+
+1. Clone this repository to your local machine:
+
+   ```shell
+   git clone <repository-url>
+   cd TuberculosisAI
+   ```
+
+2. Ensure that Git LFS is initialized for this repository:
+
+   ```shell
+   git lfs install
+   ```
+
+### Downloading Large Files
+
+- When you clone this repository, Git LFS will automatically download the large files.
+
+- If you encounter issues while cloning, ensure that Git LFS is properly installed and initialized.
+
+### Working with Large Files
+
+- When you add or commit large files, Git LFS will manage them for you.
+
+- To pull the latest changes with large files, use `git pull` as usual.
+
+- To push your changes, use `git push`, and Git LFS will handle the large files.
+
+By following these steps, you can work with large files seamlessly in this repository.
+
 ## Getting Started
 
 ### Prerequisites
@@ -32,21 +74,14 @@ This project aims to develop an AI-based system for the detection of Tuberculosi
 
 ### Installation
 
-1. Clone this repository to your local machine:
-
-   ```shell
-   git clone <repository-url>
-   cd TuberculosisAI
-   ```
-
-2. Build and run the Docker container:
+1. Build and run the Docker container:
 
    ```shell
    docker build -t <docker-image-name> .
    docker run -d -p 5000:5000 <docker-container-name:tag name>
    ```
 
-3. Access the web application at http://localhost:5000
+2. Access the web application at http://localhost:5000
 
 ## Usage
 
@@ -76,4 +111,4 @@ Ravi Rajvanshi (AI Enthusiast, DevOps Engineer, Web Developer)
 For questions or inquiries, please contact at its.ravi@outlook.com.
 ```
 
-Make sure to replace `<repository-url>`, `[dataset-name]`, `[Your Name]`, and `[your-email@example.com]` with the appropriate values for your project. This README.md file provides an overview of the project, its features, technologies used, installation instructions, usage, contribution guidelines, license information, acknowledgments, and contact details. You can further customize it to suit your project's specific details and needs.
+This added section, "Handling Large Files," provides users with guidance on working with large files in your repository, especially when they encounter issues related to files exceeding 100 MB. It instructs them on using Git LFS and troubleshooting common problems.
