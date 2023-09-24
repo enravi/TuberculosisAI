@@ -39,14 +39,20 @@ This project aims to develop an AI-based system for the detection of Tuberculosi
    cd TuberculosisAI
    ```
 
-2. Build and run the Docker container:
+2. Develop a simplified TB detection AI model using Python and TensorFlow/Keras:
+
+   ```shell
+   python3 tb_detection_model.py
+   ```
+
+3. Build and run the Docker container:
 
    ```shell
    docker build -t <docker-image-name> .
    docker run -d -p 5000:5000 <docker-container-name:tag name>
    ```
 
-3. Access the web application at http://localhost:5000
+4. Access the web application at http://localhost:5000
 
 ## Usage
 
