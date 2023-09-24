@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Your Logo">
+        <!-- Other header content -->
+    </header>
+  
+     {% if prediction %}
+            <p>
+                {% if prediction == "TB Positive" %}
+                    <span class="positive">The AI model predicts: {{ prediction }}</span>
+                {% else %}
+                    <span class="negative">The AI model predicts: {{ prediction }}</span>
+                {% endif %}
+            </p>
+        {% else %}
+            <p>An error occurred: {{ error_message }}</p>
+        {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>
+
+
