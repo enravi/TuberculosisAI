@@ -14,5 +14,8 @@ RUN pip install -r requirements.txt
 # Copy the entire project into the container
 COPY . /app
 
+# To generate detection model using dataset
+CMD ["python3", "tb_detection_model.py"]
+
 # Define the command to run your application
 CMD ["python3", "app.py"]
