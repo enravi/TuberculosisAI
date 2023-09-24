@@ -1,6 +1,3 @@
-To address the issue of downloading files larger than 100 MB, you can add a section to your README.md file that provides guidance on how to handle large files, particularly those managed with Git LFS (Large File Storage). Here's an updated version of your README.md file with this information:
-
-```markdown
 # Tuberculosis Detection AI Project
 
 ## Overview
