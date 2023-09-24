@@ -1,0 +1,8 @@
+tensorflow
+pillow
+scipy
+numpy
+Flask
+
+# Add other dependencies here
+
