@@ -6,11 +6,7 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Install Python') {
-            steps {
-                sh 'apt-get install python3.8 -y'
-            }
-        }
+        
         stage('Install pip') {
             steps {
                 sh 'curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py'
