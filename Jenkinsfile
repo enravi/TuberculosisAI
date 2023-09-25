@@ -9,14 +9,11 @@ checkout scm
 stage('Configure Home Directory') {
 steps {
 // Configure home directory outside of '/home'
-{it ->
+{jenkins ->
 jenkins.model.Jenkins.instance.getGlobalNodeProperties().getEnvVars().put('HOME', '/home/jenkins');
 }
 }
 }
-
-
-
 
 stage('Build and Test') {
 steps {
