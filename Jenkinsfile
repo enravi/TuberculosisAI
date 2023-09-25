@@ -8,7 +8,6 @@ pipeline {
         }
         stage('Install Python') {
             steps {
-                sh 'apt-get update -y'
                 sh 'apt-get install python3.8 -y'
             }
         }
