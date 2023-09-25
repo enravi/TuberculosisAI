@@ -6,17 +6,6 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Check Python and pip Versions') {
-            steps {
-                sh 'python3.10 --version'
-                sh 'pip --version'
-            }
-        }
-        stage('Install Project Dependencies') {
-            steps {
-                sh 'pip install -r requirements.txt'
-            }
-        }
         stage('Build and Test') {
             steps {
                 sh 'docker build -t tuberculosisai:1.0 .'
