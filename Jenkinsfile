@@ -36,10 +36,6 @@ pipeline {
                 // Add unit tests here
             }
         }
-        stage('Package') {
-            steps {
-                // Add packaging steps (e.g., creating Docker images, pushing to a registry)
-            }
-        }
+       
     }
 }
