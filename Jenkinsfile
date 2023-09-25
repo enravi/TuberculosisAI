@@ -1,19 +1,11 @@
 pipeline {
-    agent any
+    agent { dockerfile true }
     stages {
-        stage('Checkout') {
+        stage('GIT Checkout') {
             steps {
                 checkout scm
             }
         }
-        
-        stage('Check Python and pip Versions') {
-            steps {
-                sh 'python3.10 --version'
-                sh 'pip --version'
-            }
-        }
-        
         stage('Build and Test') {
             steps {
                 sh 'docker build -t tuberculosisai:1.0 .'
