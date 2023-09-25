@@ -1,13 +1,17 @@
-pipeline {
+pipeline 
+{
     agent any
-    stages {
-        stage('Checkout') {
-            steps {
+    stages 
+    {
+        stage('Checkout') 
+        {
+            steps 
+            {
                 checkout scm
             }
         }
         
-        }
-       
     }
+       
+}
 
