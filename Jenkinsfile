@@ -9,7 +9,7 @@ pipeline {
         
         stage('Check Python and pip Versions') {
             steps {
-                sh 'python3.8 --version'
+                sh 'python3.10 --version'
                 sh 'pip --version'
             }
         }
