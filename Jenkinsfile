@@ -8,7 +8,12 @@ pipeline {
         }
         stage('Build and Test') {
             steps {
-                sh 'docker build -t enravi/tuberculosisai:1.0 .'
+                 script {
+                    def dockerImage = 'enravi/tuberculosisai:1.0'
+                    sh "docker build -t ${dockerImage} ."
+                    
+                    // Run unit tests or other testing steps here
+                }
             }
         }
        
