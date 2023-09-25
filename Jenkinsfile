@@ -1,6 +1,7 @@
 pipeline 
 {
     agent any
+    withEnv(['DOCKER_BUILDKIT': '1']){
     stages 
    {
         stage('Build') 
@@ -12,4 +13,5 @@ pipeline
             }
         }
     }
+}
 }
