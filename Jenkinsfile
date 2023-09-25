@@ -8,8 +8,8 @@ pipeline {
         }
         stage('Install Python') {
             steps {
-                sh 'sudo apt-get update -y'
-                sh 'sudo apt-get install python3.8 -y'
+                sh 'apt-get update -y'
+                sh 'apt-get install python3.8 -y'
             }
         }
         stage('Install pip') {
