@@ -6,16 +6,9 @@ pipeline {
                 checkout scm
             }
         }
-        
-        stage('Install pip') {
-            steps {
-                sh 'curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py'
-                sh 'python3.8 get-pip.py'
-            }
-        }
         stage('Check Python and pip Versions') {
             steps {
-                sh 'python3.8 --version'
+                sh 'python3.10 --version'
                 sh 'pip --version'
             }
         }
