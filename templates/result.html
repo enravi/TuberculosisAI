@@ -12,7 +12,7 @@
   
      {% if prediction %}
             <p>
-                {% if prediction == "TB Positive" %}
+                {% if prediction == "Indication of Tuberculosis" %}
                     <span class="positive">The AI model predicts: {{ prediction }}</span>
                 {% else %}
                     <span class="negative">The AI model predicts: {{ prediction }}</span>
