@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Git Checkout') {
+        stage('Checkout') {
             steps {
                 checkout scm
             }
@@ -10,8 +10,9 @@ pipeline {
             steps {
                 sh 'docker build -t tuberculosisai:1.0 .'
                 sh 'docker run -d -p 5000:5000 tuberculosisai:1.0'
-                // Add unit tests here
+                // Add unit tests or other testing steps here
             }
         }
+        
     }
 }
