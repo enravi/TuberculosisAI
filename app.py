@@ -32,7 +32,7 @@ def predict():
 
         # Make a prediction using the loaded model
         prediction = model.predict(img)
-        class_label = "TB Positive" if prediction[0][0] > 0.5 else "TB Negative"
+        class_label = "Indication of Tuberculosis" if prediction[0][0] > 0.5 else "No Indication of Tuberculosis"
 
         return render_template('result.html', prediction=class_label)
     except Exception as e:
