@@ -1,20 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>TB Detection AI</title>
-    <link rel="stylesheet" type="text/css" href="static/style.css">
-</head>
-<body>
-    <header>
-        <img src="{{ url_for('static', filename='logo.png') }}" alt="Your Logo">
-        <!-- Other header content -->
-    </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <form action="/predict" method="post" enctype="multipart/form-data">
-        <input type="file" name="image" accept=".jpg, .jpeg, .png">
-        <input type="submit" value="Predict">
-    </form>
+    <link rel="stylesheet" href="static/css/1/global.css" />
+    <link rel="stylesheet" href="static/css/1/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+    />
 
-</body>
+   <script src="static/js/xray.js"></script>
+
+  </head>
+  <body>
+    <div class="index1">
+
+<div class="xrayboard">
+  <div class="analysis-image">Analysis Image</div>
+  <div class="board" id="previewBox">
+    <img id="previewImage" src="" >
+  </div>
+</div>
+
+    <div class="button-container">
+     <button id="normalButton" class="custom-button" onclick="applyFilters()">NORMAL</button> 
+     <button id="inverseButton" class="custom-button" onclick="resetImage()">INVERSE</button>
+    </div>
+
+<form action="/predict" method="post" enctype="multipart/form-data">
+  <div class="upload">
+    <label for="xray-upload" class="custom-upload-button">
+      UPLOAD
+    </label>
+    <input type="file" id="xray-upload" name="image" accept=".jpg, .jpeg, .png" onchange="previewImage()" />
+  </div>
+  <div class="submit">
+    <button type="submit" class="submit-button" value="Predict">SUBMIT</button>
+  </div>
+</form>
+
+      <h1 class="headline">
+        <span class="headline-txt">
+          <p class="tuberculosis">Tuberculosis</p>
+          <p class="tuberculosis">
+            <span>Detection </span>
+            <span class="ai">AI</span>
+          </p>
+        </span>
+      </h1>
+      <div class="this-ai-analysis-container">
+        <p class="this-ai-analysis">
+          This AI analysis is for informational purposes only. It is not a
+          substitute for professional medical advice, diagnosis, or treatment.
+        </p>
+        <p class="tuberculosis">
+          Always consult with a qualified healthcare provider or radiologist for
+          accurate interpretation of medical imaging results and any necessary
+          follow-up.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
-
