@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-xl: 20px;
+
+  /* Colors */
+  --color-darkslategray: #353535;
+  --color-white: #fff;
+  --color-dimgray: #626262;
+
+  /* Border radiuses */
+  --br-6xl: 25px;
+}

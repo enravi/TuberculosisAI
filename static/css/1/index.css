@@ -1,0 +1,192 @@
+.analysis-image {
+  position: absolute;
+  top: calc(50% + 156.83px);
+  left: calc(50% - 229.94px);
+  font-weight: 300;
+  display: inline-block;
+  width: 307.02px;
+  height: 56.25px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.board,
+.xrayboard {
+  position: absolute;
+  height: 482px;
+}
+.board {
+  position: absolute;
+  top: calc(50% - 241px);
+  left: calc(50% - 178.71px);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 408.65px;
+  overflow: hidden; /* Ensure the image doesn't overflow the container */
+  transition: transform 0.3s ease; /* Add a transition for smooth zooming */
+filter: invert(96%) sepia(97%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
+}
+
+/* Apply zoom effect on hover */
+.board:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed for the zoom level */
+}
+
+.xrayboard {
+  top: calc(50% - 280.5px);
+  left: calc(50% + 216.69px);
+  width: 459.88px;
+  font-size: 15px;
+  color: #000;
+}
+
+.submit,
+.upload{
+  position: absolute;
+  top: calc(50% + 251.5px);
+  left: calc(5% + 306px);
+}
+
+.submit {
+  left: calc(5% + 491px);
+}
+
+.tuberculosis {
+  margin: 0;
+}
+.ai {
+  color: #19d808;
+}
+.headline-txt {
+  line-break: anywhere;
+  width: 100%;
+}
+.headline {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 262.5px);
+  left: calc(50% - 686px);
+  font-size: 120px;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 804px;
+  height: 187px;
+  color: var(--color-darkslategray);
+}
+.this-ai-analysis {
+  margin-block-start: 0;
+  margin-block-end: 13px;
+}
+.this-ai-analysis-container {
+  position: absolute;
+  top: calc(50% + 17.5px);
+  left: calc(50% - 691px);
+  font-size: 12px;
+  line-height: 109.52%;
+  font-weight: 300;
+  color: #292929;
+  display: inline-block;
+  width: 738px;
+  height: 84px;
+}
+.index1 {
+  position: relative;
+  background-color: #f7f6f6;
+  width: 100%;
+  height: 749px;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+
+/* Style the custom upload button */
+.custom-upload-button {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust the padding to match the button size */
+  background-color: #20B3B7;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  font-size:14px;
+}
+
+/* Style the custom upload button on hover */
+.custom-upload-button:hover {
+  background-color: #8DE9EB;
+}
+
+/* Style the file input to be hidden */
+#xray-upload {
+  display: none;
+}
+
+/* Style the submit button */
+.submit-button {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust the padding to match the button size */
+  background-color: #0f0f0f;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Style the submit button on hover */
+.submit-button:hover {
+  background-color: #818589;
+}
+
+
+/* Style the file input to be hidden */
+#xray-upload {
+    display: none;
+}
+
+/* Style the image inside the container */
+#previewImage {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  max-height: 470px; /* Adjust the maximum height as needed */
+  display: block;
+  margin-top: 1%;
+  margin-left: 2.5%;
+  transition: transform 0.3s ease; /* Add a transition for smooth zooming */
+}
+
+.button-container {
+  position: absolute;
+  top: calc(51% + 244.3px); /* Adjust the top position as needed */
+  left: calc(80% - 115px); /* Adjust the left position as needed */
+}
+
+/* Style the buttons in the button container */
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #20B3B7;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 60px;
+}
+
+/* Style the buttons on hover */
+.custom-button:hover {
+  background-color: #8DE9EB;
+}
+
+/* Reset the image size when not hovered */
+.board:not(:hover) #previewImage {
+  transform: scale(1); /* Reset the scale to normal size */
+}
