@@ -56,8 +56,9 @@ This project aims to develop an AI-based system for the detection of Tuberculosi
 
 ## Screenshots
 
-![Result](static/img/result.jpeg)
+![Main](static/img/main.jpeg)
 
+![Result](static/img/result.jpeg)
 
 ## Usage
 
