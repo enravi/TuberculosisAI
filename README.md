@@ -54,6 +54,11 @@ This project aims to develop an AI-based system for the detection of Tuberculosi
 
 4. Access the web application at http://localhost:5000
 
+## Screenshots
+
+![Result](static/img/result.jpeg)
+
+
 ## Usage
 
 1. Upload a chest X-ray image through the web application.
